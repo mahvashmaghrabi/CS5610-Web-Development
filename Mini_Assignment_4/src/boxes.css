@@ -1,0 +1,9 @@
+.backgroundAfter {
+  background-color: plum;
+  border: 2px solid purple;
+}
+
+.backgroundBefore {
+  background-color: white;
+  border: 2px solid black;
+}

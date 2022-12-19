@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .grid {
+        display: grid;
+        height: 100px;
+        grid-template-areas:
+          "header header header"
+          "left content right"
+          "footer footer footer";
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: 100px 1fr 100px;
+        grid-gap: 0.5em;
+        height: 100vh;
+      }
+
+      header {
+        grid-row: 1;
+        grid-column: 1 / 4;
+        background-color: palevioletred;
+      }
+
+      .left {
+        grid-row: 2;
+        grid-column: 1 / 2;
+        background-color: palevioletred;
+      }
+
+      .content {
+        grid-row: 2;
+        grid-column: 2 / 3;
+        background-color: palevioletred;
+      }
+
+      .flex {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        margin: auto;
+        background-color: yellowgreen;
+        justify-items: center;
+      }
+
+      .flex:hover {
+        width: 120px;
+        height: 120px;
+        background-color: blue;
+        transition: background-color 0.5s, height 0.5s, width 0.5s;
+      }
+      .justify {
+        margin-top: 200px;
+      }
+
+      .right {
+        grid-row: 2;
+        grid-column: 3 / 4;
+        background-color: palevioletred;
+      }
+
+      footer {
+        grid-row: 3;
+        grid-column: 1 / 4;
+        background-color: palevioletred;
+      }
+
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <header>
+        <h1>Mahvash's Website</h1>
+      </header>
+
+      <aside class="left"></aside>
+      <div class="content">
+        <div class="flex justify"></div>
+      </div>
+
+      <aside class="right"></aside>
+
+      <footer></footer>
+    </div>
+  </body>
+</html>
